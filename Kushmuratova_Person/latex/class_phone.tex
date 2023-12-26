@@ -1,0 +1,122 @@
+\doxysection{Класс Phone}
+\hypertarget{class_phone}{}\label{class_phone}\index{Phone@{Phone}}
+
+
+Класс описания телефонов  
+
+
+
+
+{\ttfamily \#include $<$Phone.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_phone_aa8a475277cd45c20febdf574a08de944}{Phone}} (std\+::string surname, std\+::string name, std\+::string patronymic, std\+::string address, std\+::string number, int time\+\_\+icc, int time\+\_\+ldc)
+\begin{DoxyCompactList}\small\item\em Конструктор для класса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_phone_a253182aa585c2ae03f2b0ed1452fc585}{show\+Abonents\+With\+Exceeded\+Local\+Call\+Time}} (int time\+\_\+icc\+\_\+exceeded)
+\begin{DoxyCompactList}\small\item\em Список абонетнов превысивших лемит \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_phone_ae3d20f8351af0dc167185ad5ee64e743}{show\+Abonents\+With\+Long\+Distance\+Calls}} ()
+\begin{DoxyCompactList}\small\item\em Список абонетнов воспользовавшихся междугородней связью \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс описания телефонов 
+
+\begin{DoxyVerb}@file Phone.h
+@brief Заголовочный файл класса телефона
+@copyright ВоГУ
+@author Кушмуратов С.Д.
+@date 26.12.2023
+@versiom 1.0.0
+\end{DoxyVerb}
+ \begin{DoxyParagraph}{Использует классы}
+\doxylink{class_phone}{Phone} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Содержит класс}
+\doxylink{class_phone}{Phone} 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_phone_aa8a475277cd45c20febdf574a08de944}\label{class_phone_aa8a475277cd45c20febdf574a08de944} 
+\index{Phone@{Phone}!Phone@{Phone}}
+\index{Phone@{Phone}!Phone@{Phone}}
+\doxysubsubsection{\texorpdfstring{Phone()}{Phone()}}
+{\footnotesize\ttfamily Phone\+::\+Phone (\begin{DoxyParamCaption}\item[{std\+::string}]{surname,  }\item[{std\+::string}]{name,  }\item[{std\+::string}]{patronymic,  }\item[{std\+::string}]{address,  }\item[{std\+::string}]{number,  }\item[{int}]{time\+\_\+icc,  }\item[{int}]{time\+\_\+ldc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор для класса 
+
+Принимает параметры для класса \doxylink{class_phone}{Phone} 
+\begin{DoxyParams}{Аргументы}
+{\em surname} & Фамилия человека \\
+\hline
+{\em name} & Имя человека \\
+\hline
+{\em patronymic} & Отчество человека \\
+\hline
+{\em surname} & Адрес человека \\
+\hline
+{\em number} & Номер человека \\
+\hline
+{\em time\+\_\+icc} & Время внутригородских разговоров человека \\
+\hline
+{\em time\+\_\+ldc} & Время междугородних разговоров человека \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_phone_a253182aa585c2ae03f2b0ed1452fc585}\label{class_phone_a253182aa585c2ae03f2b0ed1452fc585} 
+\index{Phone@{Phone}!showAbonentsWithExceededLocalCallTime@{showAbonentsWithExceededLocalCallTime}}
+\index{showAbonentsWithExceededLocalCallTime@{showAbonentsWithExceededLocalCallTime}!Phone@{Phone}}
+\doxysubsubsection{\texorpdfstring{showAbonentsWithExceededLocalCallTime()}{showAbonentsWithExceededLocalCallTime()}}
+{\footnotesize\ttfamily void Phone\+::show\+Abonents\+With\+Exceeded\+Local\+Call\+Time (\begin{DoxyParamCaption}\item[{int}]{time\+\_\+icc\+\_\+exceeded }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Список абонетнов превысивших лемит 
+
+Данная функция выводит сведения об абонентах, время внутригородских разговоров которых превышает заданное 
+\begin{DoxyParams}{Аргументы}
+{\em time\+\_\+icc} & Время внутригородских разговоров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+surname Фамилию абонента 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Is\+Empty} & У этого абонента не превышен лимил \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_phone_ae3d20f8351af0dc167185ad5ee64e743}\label{class_phone_ae3d20f8351af0dc167185ad5ee64e743} 
+\index{Phone@{Phone}!showAbonentsWithLongDistanceCalls@{showAbonentsWithLongDistanceCalls}}
+\index{showAbonentsWithLongDistanceCalls@{showAbonentsWithLongDistanceCalls}!Phone@{Phone}}
+\doxysubsubsection{\texorpdfstring{showAbonentsWithLongDistanceCalls()}{showAbonentsWithLongDistanceCalls()}}
+{\footnotesize\ttfamily void Phone\+::show\+Abonents\+With\+Long\+Distance\+Calls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Список абонетнов воспользовавшихся междугородней связью 
+
+Данная функция выводит список абонентов, воспользовавшихся междугородней связью 
+\begin{DoxyParams}{Аргументы}
+{\em минимальное} & время разговора \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+surname Фамилию абонента 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em Is\+Empty} & Абонентов воспользовавшихся междугородней связью нет \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/54/\+LB3/\+Kushmuratova\+\_\+\+Person/\+Kushmuratova\+\_\+\+Person/Phone.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\doxysection{E\+:/54/\+LB3/\+Kushmuratova\+\_\+\+Person/\+Kushmuratova\+\_\+\+Person/\+Phone.h}
+\hypertarget{_phone_8h_source}{}\label{_phone_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00016\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ Содержит\ данные\ телефонов\ для\ фильтрации}}
+\DoxyCodeLine{00018\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_phone}{Phone}}}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ surname;\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ name;\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ patronymic;\ }
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ address;\ }
+\DoxyCodeLine{00036\ \ \ \ \ std::string\ number;\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ time\_icc;\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ time\_ldc;\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_phone_aa8a475277cd45c20febdf574a08de944}{Phone}}(std::string\ surname,\ std::string\ name,\ std::string\ patronymic,\ std::string\ address,\ std::string\ number,\ \textcolor{keywordtype}{int}\ time\_icc,\ \textcolor{keywordtype}{int}\ time\_ldc)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ :surname(surname),\ name(name),\ patronymic(patronymic),\ address(address),\ time\_icc(time\_icc),\ time\_ldc(time\_ldc)\ \{\}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_phone_a253182aa585c2ae03f2b0ed1452fc585}{showAbonentsWithExceededLocalCallTime}}(\textcolor{keywordtype}{int}\ time\_icc\_exceeded)\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (time\_icc\ >\ time\_icc\_exceeded)\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ surname\ <<\ name\ <<\ patronymic\ <<\ address\ <<\ number\ <<\ std::endl;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_phone_ae3d20f8351af0dc167185ad5ee64e743}{showAbonentsWithLongDistanceCalls}}()\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\ time\_ldc\ >\ 0)\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ surname\ <<\ name\ <<\ patronymic\ <<\ address\ <<\ number\ <<\ std::endl;}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ }
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{int}\ main()\ \{}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \}}
+
+\end{DoxyCode}
